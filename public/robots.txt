@@ -1,0 +1,5 @@
+# MilkyLush — https://milkylush.com (apex; send www.milkylush.com here with a 301 at the host)
+User-agent: *
+Allow: /
+
+Sitemap: https://milkylush.com/sitemap.xml

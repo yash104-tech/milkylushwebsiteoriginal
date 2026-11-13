@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Glass Bottle Milk Delivery, Electronic City Bengaluru | MilkyLush</title>
+    <meta
+      name="description"
+      content="Fresh cow milk in reusable glass bottles, delivered every morning near Electronic City, Bengaluru. Also ghee, paneer and wood-pressed oils. Free 500 ml sample."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#174B35" />
+    <!-- Production domain: milkylush.com — the apex host the live site already uses as canonical (also in public/sitemap.xml, public/robots.txt and src/config/site.ts). -->
+    <link rel="canonical" href="https://milkylush.com/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MilkyLush" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:title" content="MilkyLush — Fresh Cow Milk in Reusable Glass Bottles" />
+    <meta
+      property="og:description"
+      content="Fresh cow milk in reusable glass bottles, delivered every morning near Electronic City, Bengaluru. Ask for a free 500 ml sample."
+    />
+    <meta property="og:url" content="https://milkylush.com/" />
+    <meta property="og:image" content="https://milkylush.com/images/og-milkylush.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="A MilkyLush delivery partner handing a glass bottle of fresh cow milk to a customer at her door" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- The hero bottle is the largest image above the fold: start fetching it before the JS bundle runs. -->
+    <link rel="preload" as="image" href="/images/hero-bottle.avif" type="image/avif" fetchpriority="high" />
+
+    <!-- Self-hosted fonts (see src/index.css): fetch the two upright faces with the page. -->
+    <link rel="preload" href="/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+
+    <!-- Structured data: only facts published by MilkyLush (contact details, address, founders, socials). No ratings or prices. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://milkylush.com/#organization",
+            "name": "MilkyLush",
+            "alternateName": "Milky Lush",
+            "slogan": "Flavour of Purity",
+            "url": "https://milkylush.com/",
+            "logo": { "@type": "ImageObject", "url": "https://milkylush.com/images/logo.png" },
+            "image": "https://milkylush.com/images/og-milkylush.jpg",
+            "description": "Fresh cow milk in reusable glass bottles, delivered to homes near Electronic City, Bengaluru.",
+            "email": "milkylushorganic@gmail.com",
+            "telephone": "+91-9902882332",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Off Hosur Road, Near Electronic City",
+              "addressLocality": "Bengaluru",
+              "addressRegion": "Karnataka",
+              "postalCode": "560100",
+              "addressCountry": "IN"
+            },
+            "areaServed": { "@type": "Place", "name": "Electronic City, Bengaluru" },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+91-9902882332",
+              "email": "milkylushorganic@gmail.com",
+              "contactType": "customer service",
+              "areaServed": "IN",
+              "availableLanguage": ["en"]
+            },
+            "founder": [
+              { "@type": "Person", "name": "Yashwanth Kumar J" },
+              { "@type": "Person", "name": "Gokul Kumar E" }
+            ],
+            "sameAs": [
+              "https://www.instagram.com/milkylush_organic",
+              "https://www.facebook.com/share/1G6nBxd3vt/",
+              "https://youtube.com/@milkylush"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://milkylush.com/#website",
+            "url": "https://milkylush.com/",
+            "name": "MilkyLush",
+            "inLanguage": "en-IN",
+            "publisher": { "@id": "https://milkylush.com/#organization" }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://milkylush.com/#webpage",
+            "url": "https://milkylush.com/",
+            "name": "Glass Bottle Milk Delivery, Electronic City Bengaluru | MilkyLush",
+            "inLanguage": "en-IN",
+            "isPartOf": { "@id": "https://milkylush.com/#website" },
+            "about": { "@id": "https://milkylush.com/#organization" },
+            "primaryImageOfPage": "https://milkylush.com/images/og-milkylush.jpg"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <p style="padding:24px;font-family:sans-serif">
+        MilkyLush — fresh cow milk in reusable glass bottles, delivered near Electronic City, Bengaluru. WhatsApp us on
+        <a href="https://wa.me/919902882332">+91 99028 82332</a> to request a free sample.
+      </p>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
